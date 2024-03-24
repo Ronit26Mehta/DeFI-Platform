@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "base64-js": "^1.5.1",
+    "bootstrap": "^5.3.3",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "js-sha256": "^0.11.0",
+    "node-rsa": "^1.1.1",
+    "react-toggle": "^4.1.3"
+  }
+}
