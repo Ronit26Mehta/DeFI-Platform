@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="MyContract.js"></script>
+    <link href="main.0cd4aaef.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@0.20.4/dist/web3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./view_all_customers.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #bfe9ff, #77dfff);
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background: linear-gradient(to right, #bfe9ff, #77dfff);
+            width: 100%;
+            padding: 1% 0;
+            text-align: center;
+        }
+
+        #header h2 {
+            color: #333;
+            margin: 0;
+            padding: 1% 0;
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-warning {
+            background: linear-gradient(to bottom, #bfe9ff, #77dfff);
+            border-color: #bfe9ff;
+            color: #555;
+            font-weight: bold;
+            text-shadow: none;
+        }
+
+        .btn-warning:hover {
+            background: linear-gradient(to bottom, #77dfff, #bfe9ff);
+            border-color: #bfe9ff;
+            color: #555;
+        }
+
+        .blockchain-step {
+            background: linear-gradient(to bottom, #bfe9ff, #77dfff);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blockchain-step h3 {
+            color: #333;
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .blockchain-step p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        #box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        #box h3 {
+            color: #333;
+            margin-top: 0;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        #box p {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <button onclick="menu()" class="btn btn-warning">Syndicate</button>
+        <h2>KYC Customers</h2>
+    </div>
+    <div class="blockchain-step immutability fifty-attack">
+        <div id="box">
+            <h3>Customer Information</h3>
+            <p>This section will display the KYC (Know Your Customer) information for the customers.</p>
+            <!-- Add more content here as needed -->
+        </div>
+    </div>
+</body>
+
+</html>

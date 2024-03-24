@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link href="main.0cd4aaef.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="view_customer_kyc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #bfe9ff, #77dfff);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .valid-chain {
+            padding: 20px;
+        }
+
+        .blockchain-step {
+            background: linear-gradient(to bottom, #bfe9ff, #77dfff);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ant-card {
+            background-color: #87ff8f; /* Light green background */
+        }
+
+        .ant-card-body {
+            color: #fff;
+        }
+
+        .ant-card-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 33px;
+            letter-spacing: 3px;
+        }
+
+        .ant-input {
+            border-radius: 5px;
+            border: 1px solid #fff;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .ant-input-group-addon {
+            background-color: transparent;
+            border: none;
+        }
+
+        .btn-info {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .btn-info:hover {
+            background-color: #0056b3;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .glyphicon-check {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="valid-chain replace-chain">
+        <h1 class="blockchain-step" style="text-align: center; font-size: 40pt; margin-bottom: 33px; letter-spacing: 3px;">Customer Registration</h1>
+        <div class="blockchain-step immutability fifty-attack">
+            <form>
+                <div id="box">
+                    <div class="ant-card genesis block block-shadow ant-card-bordered">
+                        <div class="ant-card-body">
+                            <div>
+                                <center>
+                                    <h3 class="ant-card-title">Verified KYC Data</h3>
+                                </center>
+                                <br>
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="ant-input" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender:</label>
+                                    <input type="text" class="ant-input" id="gender">
+                                </div>
+                                <div class="form-group">
+                                    <label for="dob">Date Of Birth:</label>
+                                    <input type="text" class="ant-input" id="dob">
+                                </div>
+                                <div class="form-group">
+                                    <label for="maritalstatus">Marital Status:</label>
+                                    <input type="text" class="ant-input" id="maritalstatus">
+                                </div>
+                                <div class="form-group">
+                                    <label for="aadhar">Aadhar Number:</label>
+                                    <input type="text" class="ant-input" id="aadhar">
+                                </div>
+                                <div class="form-group">
+                                    <label for="driverslicense">Driving Licence Number:</label>
+                                    <input type="text" class="ant-input" id="driverslicense">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pan">PAN:</label>
+                                    <input type="text" class="ant-input" id="pan">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-mail ID:</label>
+                                    <input type="text" class="ant-input" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="mobile">Mobile Number:</label>
+                                    <input type="text" class="ant-input" id="mobile">
+                                </div>
+                                <div class="card">
+                                    <i class="glyphicon glyphicon-check" style="padding:5px;"></i>
+                                    <div class="card-body" id="verifier"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <center>
+            <button class="btn btn-info" style="margin-bottom: 30px;" onclick="back()">Back</button>
+        </center>
+    </div>
+</body>
+</html>
